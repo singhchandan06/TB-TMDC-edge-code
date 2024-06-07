@@ -84,7 +84,7 @@ def ham_zigzag(kx):
     
     return H0
   # Calculate the zigzag edge band structure for MoS2 monolayer
-  a = 3.19
+a = 3.19
 #b = sqrt(3)*a
 N = 8
 nk = 101
@@ -99,6 +99,9 @@ for i in arange(nk):
     evals, evecs = LA.eigh(Hamil)
     evals = sorted(evals)
     ssp[:,i] = evals
+X0 = -pi/a
+X1 = 0
+X2 = pi/a
 
 # Plot the band structure for edge width N = 8
 fig, ax = plt.subplots()
